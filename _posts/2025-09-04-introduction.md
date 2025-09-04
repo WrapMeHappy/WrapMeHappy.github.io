@@ -2,6 +2,7 @@
 layout: single
 title: Introduction(1)
 categories: 산업공학통계
+tag:
 ---
 # Statistics (통계학)
 
