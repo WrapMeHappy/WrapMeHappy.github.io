@@ -15,24 +15,28 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"  # 한국어로 변경
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "WrapMeHappy의 블로그"  # 사이트 제목 수정
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+subtitle                 : "개발과 일상을 기록하는 공간"  # 부제목 추가
+name                     : "WrapMeHappy"  # 이름 수정
+description              : "개발, 학습, 일상을 기록하는 개인 블로그입니다."  # 설명 수정
 url                      : "https://WrapMeHappy.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "WrapMeHappy/WrapMeHappy.github.io"  # GitHub 저장소 추가
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : # true, false (default)
+breadcrumbs              : true  # 브레드크럼 활성화
 words_per_minute         : 200
-enable_copy_code_button  : # true, false (default)
-copyright                : # "copyright" name, defaults to site.title
-copyright_url            : # "copyright" URL, defaults to site.url
+enable_copy_code_button  : true  # 코드 복사 버튼 활성화
+copyright                : "WrapMeHappy"  # 저작권 이름 설정
+copyright_url            : "https://WrapMeHappy.github.io"  # 저작권 URL 설정
+
+# Math Support - LaTeX 수식 지원 설정
+mathjax                  : true  # MathJax 활성화 (Minimal Mistakes 테마용)
+
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
@@ -68,8 +72,8 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true  # 검색 기능 활성화
+search_full_content      : true  # 전체 콘텐츠 검색 활성화
 search_provider          : # lunr (default), algolia, google
 lunr:
   search_within_pages    : # true, false (default)
@@ -113,10 +117,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "WrapMeHappy"  # 작성자 이름 수정
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "개발을 좋아하는 사람입니다."  # 소개 수정
+  location         : "Seoul, Korea"  # 위치 수정
   email            :
   links:
     - label: "Email"
@@ -133,7 +137,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/WrapMeHappy"  # GitHub 링크 활성화
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -149,7 +153,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/WrapMeHappy"  # GitHub 링크 활성화
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -159,7 +163,7 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-  since: "2013"
+  since: "2025"  # 연도 업데이트
 
 
 # Reading Files
@@ -209,7 +213,7 @@ excerpt_separator: "\n\n"
 incremental: false
 
 
-# Markdown Processing
+# Markdown Processing - LaTeX 수식 지원 설정 추가
 kramdown:
   input: GFM
   hard_wrap: false
@@ -219,6 +223,10 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+  math_engine: mathjax  # MathJax 수학 엔진 활성화
+  math_engine_opts:     # MathJax 옵션 설정
+    preview: true
+    preview_as_code: false
 
 
 # Sass/SCSS
@@ -229,7 +237,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul  # 한국 시간대 설정
 
 
 # Pagination with jekyll-paginate
@@ -325,3 +333,14 @@ defaults:
       comments: # true
       share: true
       related: true
+      mathjax: true  # 모든 포스트에서 MathJax 활성화
+      toc: true      # 목차 자동 생성
+      toc_sticky: true  # 고정 목차
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      mathjax: true  # 페이지에서도 MathJax 활성화

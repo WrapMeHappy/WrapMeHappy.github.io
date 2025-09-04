@@ -1,0 +1,196 @@
+{
+  "main": {
+    "id": "7d2122db4c464cd8",
+    "type": "split",
+    "children": [
+      {
+        "id": "907423bf06451521",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "819bfae6811cbbac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2025-09-04-first.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-09-04-first"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5d1058b9228cdefa",
+    "type": "split",
+    "children": [
+      {
+        "id": "b55be7178cec5097",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9fefac6f7c6fa938",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "def649e6ed885d04",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "2cda2dfd3587832f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "725f2bfe07ff043f",
+    "type": "split",
+    "children": [
+      {
+        "id": "a424b9290867f303",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6608d360654dff7d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/2025-09-04-first.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2025-09-04-first 의 백링크"
+            }
+          },
+          {
+            "id": "59c5d765be3609f7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_posts/2025-09-04-first.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "2025-09-04-first 의 나가는 링크"
+            }
+          },
+          {
+            "id": "7a72b09d10e59a6b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "8c11562bf270eefe",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/2025-09-04-first.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "2025-09-04-first 의 개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "819bfae6811cbbac",
+  "lastOpenFiles": [
+    "_site/assets/js/lunr/lunr.min.js",
+    "_site/assets/js/lunr/lunr.js",
+    "_site/assets/js/lunr/lunr-store.js",
+    "_site/assets/js/lunr/lunr-gr.js",
+    "_site/assets/js/lunr/lunr-en.js",
+    "_site/assets/js/main.min.js.map",
+    "_site/assets/js/main.min.js",
+    "_site/assets/js/lunr",
+    "_site/assets/css/main.css.map",
+    "_site/assets/css/main.css",
+    "_site/first/index.html",
+    "_site/screenshot.png",
+    "_site/screenshot-layouts.png",
+    "Templates/New Note with Image Folder.md",
+    "_posts/2025-09-04-first.md",
+    "_posts/attachment/tsne_3d_rotation.gif",
+    "screenshot-layouts.png",
+    "images/{{date}}/KakaoTalk_Photo_2025-09-02-14-26-48.jpeg",
+    "images/${filename}/KakaoTalk_Photo_2025-09-02-14-26-48.jpeg",
+    "screenshot.png"
+  ]
+}
