@@ -118,14 +118,14 @@ analytics:
 # Site Author
 author:
   name             : "WrapMeHappy"  # 작성자 이름 수정
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "img/kimbap.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "가난합니다. 도와주세요."  # 소개 수정
   location         : "Seoul, Korea"  # 위치 수정
-  email            :
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:leetry01@seoultech.ac.kr"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -329,8 +329,6 @@ defaults:
     values:
       layout: single
       author_profile: false
-      sidebar:
-        nav: "docs"
       read_time: true
       comments: true
       share: true
@@ -338,6 +336,7 @@ defaults:
       mathjax: true  # 모든 포스트에서 MathJax 활성화
       toc: true      # 목차 자동 생성
       toc_sticky: true  # 고정 목차
+      toc_label: 목차
       show_date: true # 포스팅 날짜
       
   # _pages
