@@ -121,7 +121,7 @@ author:
   avatar           : "img/kimbap.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "가난합니다. \n\n 도와주세요."  # 소개 수정
   location         : "Seoul, Korea"  # 위치 수정
-  email            : 
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -340,9 +340,7 @@ defaults:
       toc_label: 목차
       show_date: true # 포스팅 날짜
       use_math : true
-      sidebar:
-        nav: "categories"
-      
+
   # _pages
   - scope:
       path: "_pages"
