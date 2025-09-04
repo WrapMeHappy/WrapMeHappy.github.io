@@ -1,0 +1,27 @@
+{% assign categories_list = site.categories | map: 'first' | sort %}
+{% assign nav_items = '' %}
+
+{% for category in categories_list %}
+  {% assign posts_in_category = site.categories[category] %}
+  {% assign nav_item = '{"title":"' | append: category | append: '","url":"/categories/#' | append: category | append: '","posts_count":"(' | append: posts_in_category.size | append: ')"}' %}
+  {% assign nav_items = nav_items | append: nav_item %}
+  {% unless forloop.last %}
+    {% assign nav_items = nav_items | append: ',' %}
+  {% endunless %}
+{% endfor %}
+
+<!-- Navigation structure for categories -->
+<nav class="nav__list">
+  <label class="nav__title" style="padding: 0;">카테고리</label>
+  <ul>
+    <li><a href="/categories/" class="nav__link">전체 카테고리</a></li>
+    {% for category in categories_list %}
+      {% assign posts_in_category = site.categories[category] %}
+      <li>
+        <a href="/categories/#{{ category }}" class="nav__link">
+          {{ category }} ({{ posts_in_category.size }})
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

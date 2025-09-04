@@ -340,6 +340,8 @@ defaults:
       toc_label: 목차
       show_date: true # 포스팅 날짜
       use_math : true
+      sidebar:
+        nav: "categories"
       
   # _pages
   - scope:
@@ -350,3 +352,5 @@ defaults:
       author_profile: true
       mathjax: true  # 페이지에서도 MathJax 활성화
       use_math : true
+      sidebar:
+        nav: "categories"

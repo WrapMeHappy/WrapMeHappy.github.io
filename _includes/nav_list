@@ -18,6 +18,24 @@
             {% for child in nav.children %}
               <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}</a></li>
             {% endfor %}
+            
+            <!-- 카테고리 네비게이션인 경우 동적으로 카테고리 추가 -->
+            {% if navname == 'categories' and nav.title == '카테고리' %}
+              {% if site.categories %}
+                {% assign sorted_categories = site.categories | sort %}
+                {% for category_data in sorted_categories %}
+                  {% assign category_name = category_data[0] %}
+                  {% assign posts_in_category = category_data[1] %}
+                  <li>
+                    <a href="/categories/#{{ category_name | slugify }}">
+                      {{ category_name }} ({{ posts_in_category.size }})
+                    </a>
+                  </li>
+                {% endfor %}
+              {% else %}
+                <li><em>카테고리가 없습니다.</em></li>
+              {% endif %}
+            {% endif %}
           </ul>
           {% endif %}
         </li>

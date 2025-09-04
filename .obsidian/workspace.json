@@ -170,8 +170,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "9fefac6f7c6fa938",
+  "active": "819bfae6811cbbac",
   "lastOpenFiles": [
+    "_includes/category-nav.html",
     "_site/assets/js/lunr/lunr.min.js",
     "_site/assets/js/lunr/lunr.js",
     "_site/assets/js/lunr/lunr-gr.js",
@@ -182,7 +183,6 @@
     "_site/assets/css/main.css.map",
     "_site/assets/js/main.min.js.map",
     "_site/assets/js/main.min.js",
-    "_site/assets/js/lunr",
     "_site/img/kimbap.png",
     "_site/screenshot.png",
     "_site/screenshot-layouts.png",
