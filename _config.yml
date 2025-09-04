@@ -300,16 +300,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -328,7 +328,9 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
+      sidebar:
+        nav: "docs"
       read_time: true
       comments: true
       share: true
@@ -337,6 +339,7 @@ defaults:
       toc: true      # 목차 자동 생성
       toc_sticky: true  # 고정 목차
       show_date: true # 포스팅 날짜
+      
   # _pages
   - scope:
       path: "_pages"
