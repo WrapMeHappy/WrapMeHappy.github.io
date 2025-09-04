@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "ko-KR"  # 한국어로 변경
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "WrapMeHappy의 블로그"  # 사이트 제목 수정
-title_separator          : "-"
-subtitle                 : "개발과 일상을 기록하는 공간"  # 부제목 추가
+title                    : "WrapMeHappy"  # 사이트 제목 수정
+title_separator          : "|"
+subtitle                 : "나의 끄적임"  # 부제목 추가
 name                     : "WrapMeHappy"  # 이름 수정
-description              : "개발, 학습, 일상을 기록하는 개인 블로그입니다."  # 설명 수정
+description              : "가난합니다."  # 설명 수정
 url                      : "https://WrapMeHappy.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "WrapMeHappy/WrapMeHappy.github.io"  # GitHub 저장소 추가
@@ -38,9 +38,9 @@ copyright_url            : "https://WrapMeHappy.github.io"  # 저작권 URL 설�
 mathjax                  : true  # MathJax 활성화 (Minimal Mistakes 테마용)
 
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "wrapmehappy"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -119,7 +119,7 @@ analytics:
 author:
   name             : "WrapMeHappy"  # 작성자 이름 수정
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "개발을 좋아하는 사람입니다."  # 소개 수정
+  bio              : "가난합니다. 도와주세요."  # 소개 수정
   location         : "Seoul, Korea"  # 위치 수정
   email            :
   links:
@@ -330,12 +330,13 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
       mathjax: true  # 모든 포스트에서 MathJax 활성화
       toc: true      # 목차 자동 생성
       toc_sticky: true  # 고정 목차
+      show_date: true # 포스팅 날짜
   # _pages
   - scope:
       path: "_pages"
