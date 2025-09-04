@@ -348,3 +348,4 @@ defaults:
       layout: single
       author_profile: true
       mathjax: true  # 페이지에서도 MathJax 활성화
+      use_math : true
