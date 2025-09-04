@@ -172,6 +172,8 @@
   },
   "active": "819bfae6811cbbac",
   "lastOpenFiles": [
+    "_includes/mathjax-support.html",
+    "무제",
     "_site/img/kimbap.png",
     "_site/img",
     "img/kimbap.png",
@@ -187,7 +189,6 @@
     "_site/default/first/index.html",
     "_site/default/first",
     "_site/default",
-    "_site/categories/index.html",
     "_site/_pages/category-archive.md",
     "_pages/category-archive.md",
     "_site/screenshot.png",
